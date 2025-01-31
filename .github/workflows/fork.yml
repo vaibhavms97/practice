@@ -1,4 +1,4 @@
-name: Pull request Event
+name: Fork
 
 on: fork
 jobs: 
