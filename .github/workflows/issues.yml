@@ -1,0 +1,12 @@
+name: Issues Event
+
+on: issues
+
+jobs: 
+  build: 
+    runs-on: ubuntu-latest
+
+
+    steps:
+    - name: Display "Issues event"
+      run: echo "Issues event"
