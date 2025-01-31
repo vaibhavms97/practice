@@ -1,0 +1,12 @@
+name: Pull request Event
+
+on: pull_request
+
+jobs: 
+  build: 
+    runs-on: ubuntu-latest
+
+
+    steps:
+    - name: Display "Pull request event"
+      run: echo "Pull request event"
