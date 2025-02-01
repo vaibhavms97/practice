@@ -1,0 +1,51 @@
+name: Github Context Properties
+
+on: workflow_dispatch
+
+jobs:
+  echo-context:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Github context
+      run: |
+        echo "1. github.action: ${{github.action}}"
+        echo "2. github.action_path: ${{github.action_path}}"
+        echo "3. github.action_ref: ${{github.action_ref}}"
+        echo "4. github.action_repository: ${{github.action_repository}}"
+        echo "5. github.action_status: ${{github.action_status}}"
+        echo "6. github.actor: ${{github.actor}}"
+        echo "7. github.actor_id: ${{github.actor_id}}"
+        echo "8. github.api_url: ${{github.api_url}}"
+        echo "9. github.base_ref: ${{github.base_ref}}"
+        echo "10. github.env: ${{github.env}}"
+        echo "11. github.event: ${{github.event}}"
+        echo "12. github.event_name: ${{github.event_name}}"
+        echo "13. github.event_path: ${{github.event_path}}"
+        echo "14. github.graphql_url: ${{github.graphql_url}}"
+        echo "15. github.head_ref: ${{github.head_ref}}"
+        echo "16. github.job: ${{github.job}}"
+        echo "17. github.path: ${{github.path}}"
+        echo "18. github.ref: ${{github.ref}}"
+        echo "19. github.ref_name: ${{github.ref_name}}"
+        echo "20. github.ref_protected: ${{github.ref_protected}}"
+        echo "21. github.ref_type: ${{github.ref_type}}"
+        echo "22. github.repository: ${{github.repository}}"
+        echo "23. github.repository_id: ${{github.repository_id}}"
+        echo "24. github.repository_owner: ${{github.repository_owner}}"
+        echo "25. github.repository_owner_id: ${{github.repository_owner_id}}"
+        echo "26. github.repositoryUrl: ${{github.repositoryUrl}}"
+        echo "27. github.retention_days: ${{github.retention_days}}"
+        echo "28. github.run_attempt: ${{github.run_attempt}}"
+        echo "29. github.run_id: ${{github.run_id}}"
+        echo "30. github.run_number: ${{github.run_number}}"
+        echo "31. github.secret_source: ${{github.secret_source}}"
+        echo "32. github.server_url: ${{github.server_url}}"
+        echo "33. github.sha: ${{github.sha}}"
+        echo "34. github.token: ${{github.token}}"
+      echo "35. github.triggering_actor: ${{github.triggering_actor}}"
+      echo "36. github.workflow: ${{github.workflow}}"
+      echo "37. github.workflow_ref: ${{github.workflow}}"
+      echo "38. github.workflow_sha: ${{github.workflow_sha}}"
+      echo "39. github.workspace: ${{github.workspace}}"
