@@ -7,3 +7,4 @@ function xyz() {
 }
 
 abc()
+xyz()
